@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background-50: oklch(.99 0 250);
+  --color-background-100: oklch(.97 .01 250);
+  --color-background-200: oklch(.93 .02 250);
+  --color-background-300: oklch(.88 .03 250);
+  --color-background-400: oklch(.8 .04 250);
+  --color-background-500: oklch(.7 .05 250);
+  --color-background-600: oklch(.6 .05 250);
+  --color-background-700: oklch(.5 .05 250);
+  --color-background-800: oklch(.4 .04 250);
+  --color-background-900: oklch(.3 .03 250);
+  --color-background-950: oklch(.2 .02 250);
+
+  --color-accent-50: oklch(.97 .03 65);
+  --color-accent-100: oklch(.93 .06 65);
+  --color-accent-200: oklch(.88 .1 65);
+  --color-accent-300: oklch(.8 .13 65);
+  --color-accent-400: oklch(.72 .16 65);
+  --color-accent-500: oklch(.65 .18 65);
+  --color-accent-600: oklch(.58 .16 65);
+  --color-accent-700: oklch(.5 .14 65);
+  --color-accent-800: oklch(.42 .12 65);
+  --color-accent-900: oklch(.35 .1 65);
+  --color-accent-950: oklch(.25 .08 65);
+
+  --color-primary-50: oklch(.97 .02 205);
+  --color-primary-100: oklch(.93 .04 205);
+  --color-primary-200: oklch(.88 .06 205);
+  --color-primary-300: oklch(.8 .09 205);
+  --color-primary-400: oklch(.72 .11 205);
+  --color-primary-500: oklch(.6 .13 205);
+  --color-primary-600: oklch(.52 .12 205);
+  --color-primary-700: oklch(.45 .1 205);
+  --color-primary-800: oklch(.38 .08 205);
+  --color-primary-900: oklch(.3 .06 205);
+  --color-primary-950: oklch(.22 .05 205);
+
+  --color-secondary-50: oklch(.97 .02 262);
+  --color-secondary-100: oklch(.93 .04 262);
+  --color-secondary-200: oklch(.88 .07 262);
+  --color-secondary-300: oklch(.8 .1 262);
+  --color-secondary-400: oklch(.72 .13 262);
+  --color-secondary-500: oklch(.5 .22 262);
+  --color-secondary-600: oklch(.44 .2 262);
+  --color-secondary-700: oklch(.38 .17 262);
+  --color-secondary-800: oklch(.32 .14 262);
+  --color-secondary-900: oklch(.26 .1 262);
+  --color-secondary-950: oklch(.18 .06 262);
+
+  --color-foreground-50: oklch(.99 0 250);
+  --color-foreground-100: oklch(.95 .01 250);
+  --color-foreground-200: oklch(.9 .01 250);
+  --color-foreground-300: oklch(.82 .02 250);
+  --color-foreground-400: oklch(.7 .02 250);
+  --color-foreground-500: oklch(.6 .03 250);
+  --color-foreground-600: oklch(.5 .03 250);
+  --color-foreground-700: oklch(.4 .03 250);
+  --color-foreground-800: oklch(.3 .03 250);
+  --color-foreground-900: oklch(.2 .02 250);
+  --color-foreground-950: oklch(.1 .01 250);
+
+  --animate-float: float 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background-50);
+  color: var(--color-foreground-900);
+}
