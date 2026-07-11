@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fennlight.com/sitemap.xml
+Sitemap: https://fennlight.netlify.app/sitemap.xml
